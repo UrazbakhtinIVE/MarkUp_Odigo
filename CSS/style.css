@@ -1,7 +1,7 @@
 /* reset syle */
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0-modified | 20110126
-   License: none (public domain)
+v2.0-modified | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -17,7 +17,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
+margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -404,7 +404,7 @@ body{
     font-style: normal;
     font-style: 16px;
     line-height:1.2;
-    color: white;
+    color: #000;
 }
 
 *::before, ::after{
@@ -457,10 +457,66 @@ body{
 
 /* intro style start */
 .intro{
-    height: 100vh;
+    min-height: 100vh;
     background: url(../img/intro_bg.jpg) no-repeat center;
     background-size: cover;
+    padding-top: 263px;
 }
+
+.intro__title{
+    max-width: 619px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 22px;
+    color:white;
+}
+
+.intro__sub__title{
+    color:white;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 546px;
+    margin-bottom:59px;
+}
+.serch-form-info{
+    display:flex;
+    flex-wrap:wrap;
+}
+.serch-form__field{
+    width: 297px;
+    background: transparent url(../img/svg/circkl.svg) no-repeat left 6px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    color:#fff;
+
+}
+.serch-form__field::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+    color:#fff;
+}
+
+/* Кнопка */
+.search-form_submit{
+    padding: 15px 39px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size:24px;
+    color:white;
+    background: #1B7DFF;
+    border:0;
+}
+.search-form_submit:hover, .search-form_submit:focus, .search-form_submit:active{
+    background-color:#0e66da;
+}
+
 /* intro style end */
 
 
